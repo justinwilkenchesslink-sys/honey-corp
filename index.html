@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Honey | The Golden Standard</title>
+    <title>SAI GON BEES CO LTD | The Golden Standard</title>
     <style>
         :root {
             --gold-primary: #D4AF37; /* Metallic Gold */
@@ -24,6 +24,7 @@
             background-color: var(--bg-white);
             color: var(--text-dark);
             line-height: 1.6;
+            scroll-behavior: smooth;
         }
 
         /* Navigation */
@@ -41,17 +42,17 @@
 
         .logo {
             font-weight: 800;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             color: var(--gold-primary);
             text-transform: uppercase;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
         }
 
         /* Hero Section */
         .hero {
             height: 80vh;
-            /* Updated image URL to show a specific golden-themed background */
-            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.steamusercontent.com/ugc/12839811293507088791/D8CEE791B997583FD7C905037772ABFEF461FF52/');
+            /* Restored the Golden Honeycomb Pattern */
+            background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('https://images.steamusercontent.com/ugc/16570769770933282590/DA39E6F1F533C40E3F629363013B325CAE9CC2A5/');
             background-size: cover;
             background-position: center;
             display: flex;
@@ -63,16 +64,17 @@
             padding: 0 20px;
         }
 
-            .hero h1 {
-                font-size: 3.5rem;
-                margin-bottom: 1rem;
-            }
+        .hero h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.6);
+        }
 
         /* About Section */
         .about {
             padding: 5rem 15%;
             text-align: center;
-            background-color: #FFFDF5; /* Subtle honey tint */
+            background-color: #FFFDF5;
         }
 
         .gold-line {
@@ -85,45 +87,64 @@
         .btn {
             background-color: var(--gold-primary);
             color: var(--text-white);
-            padding: 12px 35px;
+            padding: 14px 40px;
             text-decoration: none;
             border-radius: 4px;
             font-weight: 600;
             transition: 0.3s;
             display: inline-block;
             margin-top: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
-            .btn:hover {
-                background-color: var(--honey-yellow);
-            }
+        .btn:hover {
+            background-color: var(--honey-yellow);
+            transform: translateY(-2px);
+        }
+
+        footer {
+            background: #1a1a1a;
+            color: #999;
+            padding: 2rem 10%;
+            text-align: center;
+            font-size: 0.9rem;
+        }
     </style>
 </head>
 <body>
 
     <nav>
-        <div class="logo">Honey</div>
+        <div class="logo">SAI GON BEES CO LTD</div>
         <div>
-            <a href="#" style="margin-left: 20px; text-decoration: none; color: var(--text-dark);">About</a>
-            <a href="#" style="margin-left: 20px; text-decoration: none; color: var(--text-dark);">Culture</a>
-            <a href="#" style="margin-left: 20px; text-decoration: none; color: var(--text-dark);">Contact</a>
+            <a href="#about" style="margin-left: 20px; text-decoration: none; color: var(--text-dark); font-weight: 600;">About</a>
+            <a href="#" style="margin-left: 20px; text-decoration: none; color: var(--text-dark); font-weight: 600;">Compliance</a>
+            <a href="#" style="margin-left: 20px; text-decoration: none; color: var(--text-dark); font-weight: 600;">Contact</a>
         </div>
     </nav>
 
     <header class="hero">
-        <h1>Welcome</h1>
-        <p>A corporate collective dedicated to innovation and the "Golden Standard."</p>
-        <a href="#about" class="btn">Discover Our Story</a>
+        <h1>SAI GON BEES CO LTD</h1>
+        <p style="font-size: 1.2rem; max-width: 700px;">Specializing in exporting high quality non-adulterated pure honey to the global market.</p>
+        <a href="#about" class="btn">Our Mission</a>
     </header>
 
     <section id="about" class="about">
         <h2 style="color: var(--gold-primary);">The Honey Identity</h2>
         <div class="gold-line"></div>
-        <p style="max-width: 800px; margin: 0 auto; color: #555;">
-            Our company focuses on purity, efficiency, and growth. Much like a hive, we operate with purpose and precision.
-            While we have exciting ventures on the horizon, our foundation is built on delivering high-quality results today.
-        </p>
+        <div style="max-width: 900px; margin: 0 auto; color: #444; text-align: left; font-size: 1.15rem; line-height: 1.8;">
+            <p style="margin-bottom: 1.5rem;">
+                With over 15 years of experience in honey exporting, what sets <strong>SAI GON BEES CO LTD</strong> apart is our ability to quickly adhere and comply with new and different standards governed by many countries across the world.
+            </p>
+            <p>
+                As a Vietnamese raw honey supplier, we specialize in exporting high quality non-adulterated pure honey to different countries in the world. Through a chain of regular visits and careful inspections on our farmers’ honey, we ensure that every last drop of our honey meets the highest international food safety standards.
+            </p>
+        </div>
     </section>
+
+    <footer>
+        &copy; 2024 SAI GON BEES CO LTD. All rights reserved.
+    </footer>
 
 </body>
 </html>
